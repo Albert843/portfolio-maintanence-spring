@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: maintanence
+    job:
+      max-allowed-tools: 1
+  datasource:
+    url: jdbc:h2:mem:test
+    username: user
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  error:
+    include-message: ALWAYS
